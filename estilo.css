@@ -1,0 +1,492 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+h1 {
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-left: 4%;
+}
+
+h2 {
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-left: 4%;
+}
+
+h3 {
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-left: 4%;
+}
+
+h4 {
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+p {
+  color: white;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+body {
+  background-color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.logo-principal {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  min-height: 90px;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav a {
+  padding-right: 10px;
+  text-decoration: none;
+  color: black;
+  transition: color 0.1s;
+}
+
+nav :hover {
+  color: rgba(226, 0, 0, 0.884);
+}
+
+.contenedor-novedad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.novedades {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  margin-top: 4%;
+}
+
+.novedades img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+  border-radius: 25px;
+}
+
+.novedades :hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .contenedor-novedad {
+    grid-template-columns: 1fr;
+  }
+}
+.contenedorpersonajes {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.personajes {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.personajes img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+  .contenedorpersonajes {
+    grid-template-columns: 1fr;
+  }
+}
+.contenedor-escuadrones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.escuadron {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  margin-top: 4%;
+  margin-right: 4%;
+  margin-bottom: 4%;
+}
+
+.escuadron img {
+  width: 40%;
+  height: auto;
+  margin-top: margin-top;
+  margin-bottom: 4%;
+  border-radius: 25px;
+}
+
+.escuadron button {
+  display: block;
+  margin-left: 4%;
+  padding: 10px 30px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.escuadron button :hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .contenedor-escuadrones {
+    grid-template-columns: 1fr;
+  }
+}
+main {
+  animation-name: cambio;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cambio {
+  0% {
+    background-color: orange;
+  }
+  50% {
+    background-color: red;
+  }
+  100% {
+    background-color: orange;
+  }
+}
+.contenedor-titanes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.titanes {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.titanes img {
+  width: 100%;
+  height: auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  border-radius: 25px;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-5px, 5px);
+  }
+  50% {
+    transform: translate(5px, 10px);
+  }
+  75% {
+    transform: translate(-5px, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.titanes:hover {
+  animation: shake 0.3s;
+  animation-iteration-count: infinite;
+}
+
+@media (max-width: 768px) {
+  .contenedor-titanes {
+    grid-template-columns: 1fr;
+  }
+}
+.contenedor-murallas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 4%;
+}
+
+.murallas {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.murallas img {
+  width: 50%;
+  height: auto;
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  border-radius: 25px;
+}
+
+.murallas :hover {
+  filter: brightness(130%);
+  transition: background-color 1s;
+}
+
+@media (max-width: 768px) {
+  .contenedor-murallas {
+    grid-template-columns: 1fr;
+  }
+}
+.contenedor-musica {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.contenedor-openings {
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+  text-decoration: none;
+  margin-left: 4%;
+  margin-bottom: 4%;
+}
+
+.opening img {
+  width: 70%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 4%;
+  border-radius: 30px;
+}
+
+.opening :hover {
+  filter: brightness(130%);
+  transition: background-color 1s;
+}
+
+@media (max-width: 768px) {
+  .contenedor-openings {
+    padding: 20px;
+  }
+  .opening img {
+    margin-bottom: 20px;
+  }
+}
+.mangaka-contenedor img {
+  max-width: 40%;
+  height: auto;
+  margin-left: 0%;
+  float: left;
+  padding-right: 5%;
+  padding-left: 1%;
+  margin-bottom: 4%;
+  margin-left: 4%;
+}
+
+.mangaka-contenedor p {
+  width: 90%;
+}
+
+.contenedor-mangas {
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+  text-decoration: none;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.manga {
+  margin: 4%;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.manga :hover {
+  transform: scale(1.1);
+}
+
+.manga img {
+  width: 50%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 4%;
+  margin-top: 4%;
+  border-radius: 25px;
+}
+
+.manga1 {
+  margin: 4%;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.manga1 :hover {
+  transform: scale(1.1);
+}
+
+.manga1 img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 4%;
+  margin-top: 4%;
+  border-radius: 25px;
+}
+
+.regresar {
+  display: flex;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+  left: 45%;
+  margin-bottom: 4%;
+}
+
+.regresar button {
+  display: block;
+  align-items: flex-end;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+.verde {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(2, 49, 2);
+}
+
+.informacion-verde {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  box-shadow: 0px 10px 20px rgb(2, 43, 2);
+  border-radius: 25px;
+  text-align: center;
+  width: 340px;
+  background-color: rgb(2, 87, 2);
+}
+
+form h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.informacion-verde {
+  display: flex;
+  flex-direction: column;
+}
+
+.azul {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(5, 13, 63);
+}
+
+.informacion-azul {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  box-shadow: 0px 10px 20px rgb(1, 21, 39);
+  border-radius: 25px;
+  text-align: center;
+  width: 340px;
+  background-color: rgb(3, 16, 88);
+  display: flex;
+  flex-direction: column;
+}
+
+.rojo {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(53, 10, 2);
+}
+
+.informacion-rojo {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  box-shadow: 0px 10px 20px rgba(194, 8, 8, 0.911);
+  border-radius: 25px;
+  text-align: center;
+  width: 340px;
+  background-color: rgba(136, 12, 3, 0.726);
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: rgb(27, 27, 27);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  bottom: 0;
+}
+
+.text-footer {
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-elementos {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+/*# sourceMappingURL=estilo.css.map */
